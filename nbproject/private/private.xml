@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/xampp/htdocs/TiendaOnline/Controlador/Connection.php</file>
             <file>file:/C:/xampp/htdocs/TiendaOnline/Controlador/CCliente.php</file>
+            <file>file:/C:/xampp/htdocs/TiendaOnline/Controlador/IConnection.php</file>
             <file>file:/C:/xampp/htdocs/TiendaOnline/index.php</file>
         </group>
     </open-files>

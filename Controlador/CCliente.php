@@ -32,12 +32,12 @@ class CCliente extends Connection{
 
     public function insertar($cliente) {
         //Preparar query
-        $smt = $this->con->prepare("INSERT INTO Cliente(phone, nombre, pass) VALUES (?, ?, ?);"); //Un signo de interrog. por cada argumento
+        $smt = $this->con->prepare("INSERT INTO Cliente(phone, nombre, pass) VALUES(?, ?, ?);"); //Un signo de interrog. por cada argumento
         //el prepare ya valida si existe o no, no crea uno con id ya existente
         //Varibles asignadas
         $phone = $cliente->getPhone();
         $nombre = $cliente->getName();
-        $pass = $cliente->getPass();
+        $pass = sha1($cliente->getPass());
         
         //linkeo o bind a los parametros usando las variables
         $smt->bind_param("iss", $phone, $nombre, $pass); //i(nt)s(tring)s(tring)
