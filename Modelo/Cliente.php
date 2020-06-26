@@ -34,7 +34,7 @@ class Cliente{
     }
     
     function setName($name){
-        $this->name = $name;
+        $this->nombre = $name;
     }
     
     function setPass($pass){
